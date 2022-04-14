@@ -45,7 +45,7 @@ img{
   border-radius: .5rem;
   display: block;
   margin: 2rem auto;
-  height: 300px;
+  min-height: 50vh;
   width: auto;
   border: 2px solid;
 }
@@ -54,3 +54,17 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+  
+  p{
+    font-size: 2rem;
+  }
+}
