@@ -4,7 +4,7 @@ let characters, character;
 resetWizard()
 
 function resetWizard(){
-  fetch('http://hp-api.herokuapp.com/api/characters')
+  fetch('https://hp-api.herokuapp.com/api/characters')
   .then(res => res.json()) // parse response as JSON
   .then(data => {
 
@@ -38,7 +38,7 @@ function guessWizard(){
     updateCurrentVal()
     updateMaxStreak()
   } else {
-    document.querySelector('h2').innerText = `Bloody Hell. The name was ${fullName}`
+    document.querySelector('h2').innerText = `Bloody Hell. The name ${fullName}`
     resetCurrentVal()
     resetWizard()
   }
