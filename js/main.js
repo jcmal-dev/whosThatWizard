@@ -38,7 +38,7 @@ function guessWizard(){
     updateCurrentVal()
     updateMaxStreak()
   } else {
-    document.querySelector('h2').innerText = `Wrong. This wizard's name is ${fullName}`
+    document.querySelector('h2').innerText = `Bloody Hell. The name was ${fullName}`
     resetCurrentVal()
     resetWizard()
   }
